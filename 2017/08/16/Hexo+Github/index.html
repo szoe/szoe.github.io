@@ -98,11 +98,11 @@
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + Github  Blog">
-<meta property="og:url" content="http://yoursite.com/2017/08/16/Hexo插件与使用相关的副本/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/08/16/Hexo+Github/index.html">
 <meta property="og:site_name" content="No Day But Today">
 <meta property="og:description" content="受Qinsman的影响，一直想要部署一个自己的blog，记录一些个人的想法，以及在产品方面的学习与理解。最近也终于使用Hexo 和NexT主题迈出了这一步。由于对前端并不了解，很多想要实现的样式和功能尚在尝试中。这里就正在使用中的功能做记录，以便日后查阅。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-17T06:52:26.000Z">
+<meta property="og:updated_time" content="2017-08-17T09:33:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github  Blog">
 <meta name="twitter:description" content="受Qinsman的影响，一直想要部署一个自己的blog，记录一些个人的想法，以及在产品方面的学习与理解。最近也终于使用Hexo 和NexT主题迈出了这一步。由于对前端并不了解，很多想要实现的样式和功能尚在尝试中。这里就正在使用中的功能做记录，以便日后查阅。">
@@ -134,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/16/Hexo插件与使用相关的副本/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/16/Hexo+Github/"/>
 
 
 
@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/16/Hexo插件与使用相关的副本/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/16/Hexo+Github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SZoe">
@@ -365,7 +365,8 @@
 <p>3) 在 <span id="file">blog/source/img</span> 下创建 <span id="file">摘要配图</span> 文件夹<br>4) 修改 <span id="file">/scaffolds/post.md</span> 中默认Front-matter<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">title:</span> <span class="string">&#123;&#123;</span> <span class="string">title</span> <span class="string">&#125;&#125;</span></div><div class="line"><span class="attr">date:</span> <span class="string">&#123;&#123;</span> <span class="string">date</span> <span class="string">&#125;&#125;</span></div><div class="line"><span class="attr">tags:</span></div><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="attr">images:</span> <span class="string">"/img/摘要配图/"</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure></p>
 <p>此后，发布post时，如果需要添加摘要配图，先将配图放置文件夹中，然后将images的地址填写完整；如果不需要添加配图，将Front-matter中img地址删除。<br>或者见插件 <a href="https://github.com/poacher2k/hexo-featured-image" target="_blank" rel="external">hexo-featured-image</a></p>
 <h4 id="1-3-背景音乐"><a href="#1-3-背景音乐" class="headerlink" title="1.3 背景音乐"></a>1.3 背景音乐</h4><p>在网易云音乐找到需要添加的音乐，然后生成外链，将外链插入至需要的地方，如 <span id="file">/next/layout/_macro/sidebar.swig</span><br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"music163player"</span>&gt;</div><div class="line">    &lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=<span class="number">280</span> height=<span class="number">86</span> src=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=38358214&amp;auto=0&amp;height=66"</span>&gt;</div><div class="line">    &lt;/iframe&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
-<h3 id="2-插件与标签"><a href="#2-插件与标签" class="headerlink" title="2.插件与标签"></a>2.插件与标签</h3><h4 id="2-1-文章摘要"><a href="#2-1-文章摘要" class="headerlink" title="2.1 文章摘要"></a>2.1 文章摘要</h4><ul>
+<h4 id="1-4-分类数目更新"><a href="#1-4-分类数目更新" class="headerlink" title="1.4 分类数目更新"></a>1.4 分类数目更新</h4><p>删除post时，各页面中分类与标签数目并不会自动变化，需将根目录下 <span id="file">db.json</span> 删除，然后重新 <code>hexo s</code></p>
+<h3 id="2-插件与标签"><a href="#2-插件与标签" class="headerlink" title="2. 插件与标签"></a>2. 插件与标签</h3><h4 id="2-1-文章摘要"><a href="#2-1-文章摘要" class="headerlink" title="2.1 文章摘要"></a>2.1 文章摘要</h4><ul>
 <li><p>用文章开头部分作为摘要 </p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- more --&gt;</span></div></pre></td></tr></table></figure>
 </li>
@@ -382,12 +383,14 @@
 </li>
 </ul>
 <h4 id="2-3-图片"><a href="#2-3-图片" class="headerlink" title="2.3 图片"></a>2.3 图片</h4><ul>
-<li>asset文件<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_img [文件名 有后缀] [显示名称] %&#125;</div><div class="line">&#123;% asset_img moon.jpg moon %&#125;</div></pre></td></tr></table></figure>
+<li><p>普通</p>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% img <span class="comment">[class names]</span> /path/to/image <span class="comment">[width]</span> <span class="comment">[height]</span> <span class="comment">[title text <span class="comment">[alt text]</span>]</span> %&#125;</div><div class="line">&#123;% img <span class="comment">[class names]</span> url <span class="comment">[width]</span> <span class="comment">[height]</span> <span class="comment">[title text <span class="comment">[alt text]</span>]</span> %&#125;</div><div class="line">//<span class="comment">[]</span>如果不需要可以不用</div></pre></td></tr></table></figure>
+</li>
+<li><p>asset文件</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_img [文件名 有后缀] [显示名称] %&#125;</div><div class="line">&#123;% asset_img moon.jpg moon %&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="2-4-reference"><a href="#2-4-reference" class="headerlink" title="2.4 reference"></a>2.4 reference</h4><p>使用插件 <a href="https://github.com/quentin-chen/hexo-reference" target="_blank" rel="external">hexo-reference</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">basic footnote[^1]</div><div class="line">here is an inline footnote[<span class="string">^2</span>](<span class="link">inline footnote</span>)</div><div class="line">and another one[^3]</div><div class="line">and another one[^4]</div><div class="line"></div><div class="line">[<span class="symbol">^1</span>]: <span class="link">basic footnote content</span></div><div class="line">[<span class="symbol">^3</span>]: <span class="link">paragraph</span></div><div class="line">footnote</div><div class="line">content</div><div class="line">[<span class="string">^4</span>]: footnote content with some [<span class="string">markdown</span>](<span class="link">https://en.wikipedia.org/wiki/Markdown</span>)</div></pre></td></tr></table></figure></p>
-
-<h3 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h3><h4 id="3-1-使用icon"><a href="#3-1-使用icon" class="headerlink" title="3.1 使用icon"></a>3.1 使用icon</h4><p>使用<a href="http://fontawesome.dashgame.com/#new" target="_blank" rel="external">Font Awesome</a> icon, 可以通过 <code>fa-lg</code> (33%递增)、<code>fa-2x</code>、 <code>fa-3x</code>、<code>fa-4x</code>，或者 <code>fa-5x</code> 类 来放大图标。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;i class="fa fa-camera-retro fa-lg"&gt;&lt;/i&gt; fa-lg</div><div class="line">&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt; fa-2x</div><div class="line">&lt;i class="fa fa-camera-retro fa-3x"&gt;&lt;/i&gt; fa-3x</div><div class="line">&lt;i class="fa fa-camera-retro fa-4x"&gt;&lt;/i&gt; fa-4x</div><div class="line">&lt;i class="fa fa-camera-retro fa-5x"&gt;&lt;/i&gt; fa-5x</div></pre></td></tr></table></figure></p>
+<h3 id="3-其他"><a href="#3-其他" class="headerlink" title="3. 其他"></a>3. 其他</h3><h4 id="3-1-使用icon"><a href="#3-1-使用icon" class="headerlink" title="3.1 使用icon"></a>3.1 使用icon</h4><p>使用<a href="http://fontawesome.dashgame.com/#new" target="_blank" rel="external">Font Awesome</a> icon, 可以通过 <code>fa-lg</code> (33%递增)、<code>fa-2x</code>、 <code>fa-3x</code>、<code>fa-4x</code>，或者 <code>fa-5x</code> 类 来放大图标。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;i class="fa fa-camera-retro fa-lg"&gt;&lt;/i&gt; fa-lg</div><div class="line">&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt; fa-2x</div><div class="line">&lt;i class="fa fa-camera-retro fa-3x"&gt;&lt;/i&gt; fa-3x</div><div class="line">&lt;i class="fa fa-camera-retro fa-4x"&gt;&lt;/i&gt; fa-4x</div><div class="line">&lt;i class="fa fa-camera-retro fa-5x"&gt;&lt;/i&gt; fa-5x</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -418,8 +421,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/15/周二/" rel="next" title="周二">
-                <i class="fa fa-chevron-left"></i> 周二
+              <a href="/2017/08/15/About Face4/" rel="next" title="About Face4:交互设计精髓">
+                <i class="fa fa-chevron-left"></i> About Face4:交互设计精髓
               </a>
             
           </div>
@@ -503,7 +506,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -514,7 +517,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -525,7 +528,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -560,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-首页相关"><span class="nav-text">1. 首页相关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-新增指定Page"><span class="nav-text">1.1 新增指定Page</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-摘要配图"><span class="nav-text">1.2 摘要配图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-背景音乐"><span class="nav-text">1.3 背景音乐</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-插件与标签"><span class="nav-text">2.插件与标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-文章摘要"><span class="nav-text">2.1 文章摘要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-链接"><span class="nav-text">2.2 链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-图片"><span class="nav-text">2.3 图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-reference"><span class="nav-text">2.4 reference</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-其他"><span class="nav-text">3.其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-使用icon"><span class="nav-text">3.1 使用icon</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-首页相关"><span class="nav-text">1. 首页相关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-新增指定Page"><span class="nav-text">1.1 新增指定Page</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-摘要配图"><span class="nav-text">1.2 摘要配图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-背景音乐"><span class="nav-text">1.3 背景音乐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-分类数目更新"><span class="nav-text">1.4 分类数目更新</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-插件与标签"><span class="nav-text">2. 插件与标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-文章摘要"><span class="nav-text">2.1 文章摘要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-链接"><span class="nav-text">2.2 链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-图片"><span class="nav-text">2.3 图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-其他"><span class="nav-text">3. 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-使用icon"><span class="nav-text">3.1 使用icon</span></a></li></ol></li></ol></div>
             
 
           </div>
