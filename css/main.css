@@ -1049,7 +1049,7 @@ pre .javascript .function {
   width: 24px;
   background: #222;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 1;
   color: #fff;
   cursor: pointer;
   text-align: center;
@@ -1731,7 +1731,7 @@ pre .javascript .function {
   -moz-border-radius: 80px;
 }
 .site-author-name {
-  margin: 0;
+  margin: 2px;
   text-align: center;
   color: #222;
   font-weight: 600;
@@ -1813,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2898ff;
+  background: #c80da7;
 }
 .links-of-blogroll {
   font-size: 13px;
