@@ -1813,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1d81;
+  background: #eccbff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3266,4 +3266,8 @@ div#music163player {
 }
 h1.post-title {
   font-family: Georgia, sans;
+}
+
+.image-size-200 {
+  width: 200px;
 }
