@@ -97,14 +97,14 @@
 <meta name="description" content="埋点就是在网站或APP中加入一些程序代码，用以收集和统计用户在该网站/APP中的浏览、访问数据和应用使用情况，分析用户交互行为，从而帮助产品和运营进行后续优化。 一般是从产品和运营层面确定埋点逻辑，根据自己产品的任务流和业务目标形成明确的埋点方案，再由技术人员按具体的埋点方案落实到代码中，最后通过数据统计平台收集和呈现出具体的数据信息。">
 <meta name="keywords" content="数据埋点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据埋点">
+<meta property="og:title" content="数据埋点初识">
 <meta property="og:url" content="http://yoursite.com/2019/02/21/数据埋点/index.html">
 <meta property="og:site_name" content="No Day But Today">
 <meta property="og:description" content="埋点就是在网站或APP中加入一些程序代码，用以收集和统计用户在该网站/APP中的浏览、访问数据和应用使用情况，分析用户交互行为，从而帮助产品和运营进行后续优化。 一般是从产品和运营层面确定埋点逻辑，根据自己产品的任务流和业务目标形成明确的埋点方案，再由技术人员按具体的埋点方案落实到代码中，最后通过数据统计平台收集和呈现出具体的数据信息。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-21T08:32:36.725Z">
+<meta property="og:updated_time" content="2019-02-21T14:12:41.111Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据埋点">
+<meta name="twitter:title" content="数据埋点初识">
 <meta name="twitter:description" content="埋点就是在网站或APP中加入一些程序代码，用以收集和统计用户在该网站/APP中的浏览、访问数据和应用使用情况，分析用户交互行为，从而帮助产品和运营进行后续优化。 一般是从产品和运营层面确定埋点逻辑，根据自己产品的任务流和业务目标形成明确的埋点方案，再由技术人员按具体的埋点方案落实到代码中，最后通过数据统计平台收集和呈现出具体的数据信息。">
 
 
@@ -140,7 +140,7 @@
 
 
 
-  <title>数据埋点 | No Day But Today</title>
+  <title>数据埋点初识 | No Day But Today</title>
   
 
 
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据埋点</h1>
+          <h1 class="post-title" itemprop="name headline">数据埋点初识</h1>
         
 
         <div class="post-meta">
@@ -379,13 +379,89 @@
         <p>埋点就是在网站或APP中加入一些程序代码，用以收集和统计用户在该网站/APP中的浏览、访问数据和应用使用情况，分析用户交互行为，从而帮助产品和运营进行后续优化。</p>
 <p>一般是从产品和运营层面确定埋点逻辑，根据自己产品的任务流和业务目标形成明确的埋点方案，再由技术人员按具体的埋点方案落实到代码中，最后通过数据统计平台收集和呈现出具体的数据信息。</p>
 <a id="more"></a>
-<h3 id="1-埋点数据来源"><a href="#1-埋点数据来源" class="headerlink" title="1. 埋点数据来源"></a>1. 埋点数据来源</h3><h4 id="1-1-页面埋点"><a href="#1-1-页面埋点" class="headerlink" title="1.1 页面埋点"></a>1.1 页面埋点</h4><p>页面埋点主要记录一个页面的<strong>用户访问情况</strong><br><div class="note info"><p>包括访问人数、访问时间、停留时间、页面路径等信息</p></div> 从而判断一个页面的总体流量情况以及用户对于该页面的定位——是一个具有**具体功能的操作页面**还是一个用来**进入具体功能的转接页面**
-<div class="note info"><p>包括访问人数、访问时间、停留时间、页面路径等信息</p></div> </p>
-<p>完成页面埋点后，业务人员可以通过登录埋点落地的数据统计平台查看页面的访问情况。</p>
-<h4 id="1-2-事件埋点"><a href="#1-2-事件埋点" class="headerlink" title="1.2 事件埋点"></a>1.2 事件埋点</h4><p>事件埋点更关注针对<strong>某一个具体功能、模块、区域的用户访问情况</strong>来指导产品优化<br>通过统计页面上不同功能区的流量分布，判断用户对于产品功能和内容的偏好，分析业务流程设计对用户漏损的影响，不同用户在APP中的使用路径等<br>事件埋点将产品经理和运营人员从“拍脑袋”和“凭感觉”做决策的境地中解脱出来，通过埋点，业务及分析人员可以在相关的数据统计平台上看到埋点事件在一段时间或某个特定活动下的用户点击行为，分析用户对于产品功能的选择和点击频率，或活动流程中用户的转化情况，从而评估活动设计。</p>
+<h3 id="1-埋点数据来源"><a href="#1-埋点数据来源" class="headerlink" title="1. 埋点数据来源"></a>1. 埋点数据来源</h3><h4 id="1-1-页面埋点"><a href="#1-1-页面埋点" class="headerlink" title="1.1 页面埋点"></a>1.1 页面埋点</h4><p>页面埋点主要记录<font color="#3980c3">一个页面</font>的用户访问情况<br><div class="note info"><p>包括访问人数、访问时间、停留时间、页面路径等信息 </p></div>从而判断一个页面的总体流量情况以及用户对于该页面的定位——是一个具有具体功能的操作页面还是一个用来进入具体功能的转接页面。<br>完成页面埋点后，业务人员可以通过登录埋点落地的数据统计平台查看页面的访问情况。</p>
+<h4 id="1-2-事件埋点"><a href="#1-2-事件埋点" class="headerlink" title="1.2 事件埋点"></a>1.2 事件埋点</h4><p>事件埋点更关注针对<font color="#3980c3">某一个具体功能、模块、区域</font>的用户访问情况来指导产品优化<br><div class="note info"><p> 通过统计页面上不同功能区的流量分布</p>
 <ul>
-<li>自定义事件分析</li>
+<li>判断用户对于产品功能和内容的偏好（选择和点击频率）</li>
+<li>分析业务流程设计对用户漏损的影响 （流程转化）</li>
+<li>不同用户在APP中的使用路径等 </li>
+</ul></div>事件埋点将产品经理和运营人员从“拍脑袋”和“凭感觉”做决策的境地中解脱出来，通过埋点，业务及分析人员可以在相关的数据统计平台上看到埋点事件在一段时间或某个特定活动下的用户点击行为，分析用户对于产品功能的选择和点击频率，或活动流程中用户的转化情况，从而评估活动设计。 </p>
+<p>事件埋点举例：<br><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><a href="#-1">自定义触发事件</a></li><li class="tab"><a href="#-2">转化漏斗分析</a></li><li class="tab"><a href="#-3">路径分析</a></li></ul><div class="tab-content"><div class="tab-pane active" id="-1"><p>2019-02-01至2019-02-28，点击发票开具的事件数，按每天统计</p>
+</div><div class="tab-pane" id="-2"><p>2019-02-01至2019-02-28，红包漏斗转化，按每天统计<br>浏览系统（100%）- 进入红包页面（30%）- 领取红包（10%）</p>
+</div><div class="tab-pane" id="-3"><p>起始用户数，转化用户数，转化率，转化步骤，转化时间<br>访问开发票页面-搜索抬头-选择商品明细-点击开具<br>访问开发票页面-搜索抬头-选择商品明细-点击预览-点击开具</p>
+</div></div></div></p>
+<h3 id="2-埋点的技术方式"><a href="#2-埋点的技术方式" class="headerlink" title="2. 埋点的技术方式"></a>2. 埋点的技术方式</h3><p>从技术角度来说，埋点分为代码埋点、无码埋点和全埋点，三种方式的技术操作难度不同，能够提供的数据信息也有所差别。</p>
+<h4 id="2-1-代码埋点"><a href="#2-1-代码埋点" class="headerlink" title="2.1 代码埋点"></a>2.1 代码埋点</h4><p>代码埋点是目前比较主流的埋点方式，业务人员根据自己的统计需求选择需要埋点的区域及埋点方式，形成详细的埋点方案，研发人员再手工将这些统计代码添加在想要获取数据的统计点上。</p>
+<p>代码埋点也分使用第三方统计工具或自建数据仓库，第三方统计如<a href="http://www.talkingdata.com/" target="_blank" rel="external">TalkingData</a>、<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" rel="external">百度统计</a>、<a href="https://www.umeng.com/" target="_blank" rel="external">友盟</a>。</p>
+<p>代码埋点也有前端埋点和后端埋点的区别，在后面会具体解释。</p>
+<p>优点：</p>
+<ul>
+<li><p>交互行为属性全面<br>代码埋点能收集到全面的交互行为，除了统计事件的点击次数和人数，还能通过对事件进行传参，记录该事件的信息和该数据的组成，进而分析同一个点击动作后面的原因。例如，对APP首页的广告轮播页的点击这个事件进行代码埋点并传参广告ID，不然可以知道点击广告轮播的访客数和访问次数，还可以知道各轮播广告的点击情况，从而判断投放哪些广告的导流效果更好，进而调整优化轮播图的投放内容，提高导流效果。</p>
+</li>
+<li><p>埋点方式灵活<br>代码埋点较灵活，可以根据业务人员的具体需求调整埋点范围和方式，而不是机械的对点击动作进行一对一的统计。对于一些可以自定义功能的版块，代码埋点可以帮助业务人员按照产品逻辑对整个区域进行单一埋点，并配合传参记录各个自定义功能的点击情况，而不受用户自定义的影响</p>
+</li>
 </ul>
+<p>缺点：</p>
+<ul>
+<li><p>工作量大，人力成本高<br>由于灵活和自定义程度高，代码埋点无法通过设置标准化的埋点代码，对页面进行统一埋点，而需要业务人员在制作埋点方案时对所有埋点内容进行详尽设置，详细注明所有埋点事件和页面标明埋点方式、命名方式，形成系统的方案，再由技术人员根据方案进行定制化埋点</p>
+</li>
+<li><p>版本更新代价<br>由于代码埋点是通过SDK嵌在APP代码中，每次添加埋点内容都需要配合APP发版上线,<font color="#3980c3">H5页面埋点除外，不受版本迭代影响</font></p>
+</li>
+<li><p>配合要求高<br>代码埋点要求业务人员和技术人员共同完成，业务人员制作埋点方案，技术执行，并配合完成埋点测试</p>
+</li>
+</ul>
+<p>代码埋点的适用场景:<br><div class="note info"><p>有具体的业务分析需求，且按照各个事件埋点的方式不能满足<br>需要对埋点事件进行传参等自定义属性设置</p></div></p>
+<h4 id="2-2-可视化埋点"><a href="#2-2-可视化埋点" class="headerlink" title="2.2 可视化埋点"></a>2.2 可视化埋点</h4><p>可视化埋点为前端半自动埋点，埋点方式通过部署在APP上的基础代码对APP所有可交互元素进行解析，并在可视化页面对埋点区域和事件ID进行设定，从而在用户有所操作时，对交互时间（操作行为）进行记录。</p>
+<p>优点：</p>
+<ul>
+<li><p>操作简单<br>无码埋点无需技术人员进行SDK嵌入，不懂代码的产品运营人员也可通过后台可视化界面配置和统计埋点并实时下发到客户端生效。</p>
+</li>
+<li><p>无需版本更新<br>由于不需要嵌入新SDK，无码埋点不需要发布新版APP，可谓即时生效</p>
+</li>
+<li><p>对所有版本生效<br>新增埋点在所有版本生效，不存在迭代问题（只要老版APP嵌入SDK）</p>
+</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>不能自定义交互事件属性<br>无码埋点无法对具体事件设置参数，即不支持事件的自定义传参。比如同一个位置有多种内容更新替换时（如首页广告轮播），无码埋点不支持区分该位置的内容并记录不同内容的点击情况</p>
+</li>
+<li><p>不支持瀑布流交互<br>对于可以不断加载的内容瀑布流，无码埋点不支持记录瀑布流的交互行为</p>
+</li>
+<li><p>覆盖功能有限<br>不是所有的控件操作都可以通过这种方案进行定制</p>
+</li>
+</ul>
+<p>可视化埋点的适用场景:<br><div class="note info"><p>分析或统计需求简单，不需要对埋点事件进行传参等自定义属性设置<br>频繁上线或更新的H5类型的运营活动</p></div></p>
+<h4 id="2-3-全埋点"><a href="#2-3-全埋点" class="headerlink" title="2.3 全埋点"></a>2.3 全埋点</h4><p>全埋点为前端全自动埋点，是在APP中嵌入SDK，在SDK部署时做统一的“全埋点”，将APP的操作尽量多的采集下来。其特点在于无论业务人员此刻是否需要统计APP某一部分，全埋点都会将该处的用户行为数据和对应的发生地信息照单全收下来。前端自动采集全部事件，上报埋点数据，由后端来过滤和计算出有用的数据。<a href="https://www.growingio.com/" target="_blank" rel="external">GrowingIO</a> 即为全埋点处理。</p>
+<p>优点：</p>
+<ul>
+<li><p>研发成本低<br>前端只要加载埋点脚本，即可获取所有数据行为</p>
+</li>
+<li><p>信息全，自动获取启发性信息<br>全埋点可告诉分析人员界面上每个事件分别被点击的概率是多大，哪些事件值得做更进一步的分析等</p>
+</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>交互属性有限<br>与无码埋点相同，全埋点依然没有解决覆盖的操作有限问题，不能灵活地自定义属性。</p>
+</li>
+<li><p>数据形式非业务导向<br>全埋点是对所有事件数据的自动收集，没有按照业务需求进行事件或区域设置，业务或数据人员在使用时或许不能直接使用，需要二次计算或处理，且海量数据同样是个坑，数据太多会干扰分析</p>
+</li>
+<li><p>数据过载，服务器和网络传输压力大<br>由于全埋点对所有的事件都搜集数据，流量和采集的数据过于庞大，服务器性能压力山大</p>
+</li>
+</ul>
+<p>全埋点的适用场景:<br><div class="note info"><p>分析或统计需求简单，不需要对埋点事件进行传参等自定义属性设置，仅前端埋点即可<br>频繁上线或更新的H5类型的运营活动</p></div></p>
+<h4 id="2-4-如何选择埋点方式"><a href="#2-4-如何选择埋点方式" class="headerlink" title="2.4 如何选择埋点方式"></a>2.4 如何选择埋点方式</h4><p>如果产品很简单，没什么复杂的功能，也不需要精细的分析，那么当然可以使用自动埋点，它比较方便。</p>
+<p>如果产品并不简单，那么：<br>在产品量级还比较小的时候，可以尝试全埋点，这个时候可以尽情地挖掘、回溯、熟悉数据。<br>当用户量级起来之后，我们应该已经清楚该埋哪些点了，那么人工埋点效果会更好，虽然成本也高一些。</p>
+<p>而可视化埋点，就等到它可以让产品运营人员方便地选择各事件的特有属性时再用吧。</p>
+<h3 id="3-埋点采集的方法"><a href="#3-埋点采集的方法" class="headerlink" title="3. 埋点采集的方法"></a>3. 埋点采集的方法</h3><p>埋点采集，一般是<font color="#3980c3">基于日志</font>的计算方式居多.<br>例如，用户回答问题时，需要统计发布回答这个按钮的点击量，此时前端用户点击该按钮时发出点击日志，基于这个日志统计；又如某个接口的执行成功/失败量统计，就需要该接口发起执行、执行成功/执行失败时各发出一条日志，这是基于接口发出的日志统计。</p>
+<p><div class="note info"><p>统计时，一般常见的分析比如有用户行为分析、转化/成功/失败率分析（漏斗模型）、内容用户属性分析，以及监控上，常有每秒/分钟/小时/天数据量指标同比/环比变化的监控</p></div>那么日志里记录哪些信息，主要根据你要统计的指标、维度、最后需要的报表结果来定，理论上前期采集日志里携带的信息越多，后续想要增加一些维度指标时，就越不需要再动埋点处的代码，并且可以有历史日志现成的数据使用，但所需记录的信息太多也会造成日志量体积变大，甚至影响业务性能.</p>
+<h4 id="3-1-前端埋点和后端埋点"><a href="#3-1-前端埋点和后端埋点" class="headerlink" title="3.1 前端埋点和后端埋点"></a>3.1 前端埋点和后端埋点</h4><p><strong>前端埋点</strong><br>若产品的使用场景都是不需要与服务端进行交互的，那么我们必然需要在前端进行埋点。<br>举个例子，如果你要统计用户点击发布回答按钮的点击率，一般是前端点击按钮行为发送点击日志，页面按钮展示发送pv展示日志，然后点击量/展示量，就是点击率，这里就要前端埋点.</p>
+<p>然而前端采集的数据可能会因各种原因丢失，如网络不佳、采用批量上报策略时可能会在上报之前被用户清理掉数据、或用户长时间不联网造成本地存储的数据溢出。</p>
+<p><strong>后端埋点</strong><br>用户与服务器成功交互的数据则不会丢失，因为交互成功的同时，数据已经到服务端了，此时只需内网传输存储一下就好了。所以后端采集会更全更准。<br>还是上面的例子，如果你要统计回答发布成功量，那就要在后端发布回答的接口处埋点，因为只有执行发布回答的接口后端服务，才知道回答成功发布没有。如果你用的是点击按钮的前端埋点方式去统计，比如用户发布一条回答时，他在前端连续快速点了n次发布回答按钮，发送了n条点击日志，那你统计得到的发布数量是n，这就不准确了，实际发布一条回答，后端埋点会统计得到发布量就是1。</p>
+<p><strong>前后端总结</strong><br>而对于那些既存在于前端又存在于后端的数据，如果前后端都去采集，则会造成数据冗余，浪费流量、存储和清理成本。</p>
+<p>所以，对于那些既存在于前端又存在于后端的数据，还是应该<font color="#3980c3">优先从后端采集</font>，<font color="#3980c3">前端采集的数据应该只是作为后端埋点的补充</font>，是后端拿不到的那些数据，如请求交互失败时的数据或不需与服务器交互的数据等。</p>
+<p><br><br><br><br><i class="fa fa-leaf"></i><font size="3"> 更多阅读 </font></p>
+<blockquote><a href="https://coffee.pmcaff.com/article/1080897420931200/pmcaff?utm_source=search&amp;newwindow=1" target="_blank" rel="external">埋点入门分享</a><br><a href="https://zhuanlan.zhihu.com/p/27094231" target="_blank" rel="external">浅谈数据采集之无埋点与可视化埋点</a><br><a href="https://www.pmcaff.com/discuss/index/615687685318720" target="_blank" rel="external">服务端（后端）埋点应该怎么梳理</a><br></blockquote>
+
 
       
     </div>
@@ -558,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-埋点数据来源"><span class="nav-text">1. 埋点数据来源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-页面埋点"><span class="nav-text">1.1 页面埋点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-事件埋点"><span class="nav-text">1.2 事件埋点</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-埋点数据来源"><span class="nav-text">1. 埋点数据来源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-页面埋点"><span class="nav-text">1.1 页面埋点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-事件埋点"><span class="nav-text">1.2 事件埋点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-埋点的技术方式"><span class="nav-text">2. 埋点的技术方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-代码埋点"><span class="nav-text">2.1 代码埋点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-可视化埋点"><span class="nav-text">2.2 可视化埋点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-全埋点"><span class="nav-text">2.3 全埋点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-如何选择埋点方式"><span class="nav-text">2.4 如何选择埋点方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-埋点采集的方法"><span class="nav-text">3. 埋点采集的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-前端埋点和后端埋点"><span class="nav-text">3.1 前端埋点和后端埋点</span></a></li></ol></li></ol></div>
             
 
           </div>
